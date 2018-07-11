@@ -12,7 +12,7 @@ RUN export https_proxy=$https_proxy_arg && git clone https://github.com/akshshar
 
 RUN rm -r /root/service-layer-objmodel /root/openr
 
-COPY code /root/code
+COPY . /root/code
 
 RUN export https_proxy=$https_proxy_arg && git clone https://github.com/ivanmejiarocha/micro-service.git /root/micro-service/ && cd /root/micro-service/libs && sed -i 's/g++-4.9/g++-5/g' ./build_dependencies.sh && cd /root/micro-service/libs && ./build_dependencies.sh && cp -r /root/code/* /root/micro-service/ && cd /root/micro-service/ && make
 
