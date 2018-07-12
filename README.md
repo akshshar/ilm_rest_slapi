@@ -49,7 +49,7 @@ root@rtr1:/#
 root@rtr1:/# 
 root@rtr1:/# /root/mounted/run.sh 127.0.0.1 57777
 WARNING: Logging before InitGoogleLogging() is written to STDERR
-I0711 04:18:22.335196   483 main.cpp:86] Connecting IOS-XR to gRPC server at 127.0.0.1:57777
+I0711 04:18:22.335196   483 main.cpp:86] Connecting to IOS-XR gRPC server at 127.0.0.1:57777
 I0711 04:18:22.382359   483 main.cpp:131] Press control-c to quit
 Modern C++ Microservice now listening for requests at: http://11.11.11.23:6502/
 
